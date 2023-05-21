@@ -5,13 +5,12 @@
         $nome  = $_POST['nome'];
         $email = $_POST['email'];
         $senha = $_POST['senha'];
-
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    
+            
             $senhaCriptografada = password_hash($senha, PASSWORD_DEFAULT);
             $sql = "INSERT INTO usuario(nome,email,senha) VALUES('{$nome}','{$email}','{$senhaCriptografada}')";
             $res = $conn -> query($sql);
-
+            
             if($res == true){
                 print "<script>alert('Cadastrado com sucesso')</script>";
             }else{
