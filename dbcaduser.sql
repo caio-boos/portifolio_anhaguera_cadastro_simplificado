@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/05/2023 às 01:42
+-- Tempo de geração: 21/05/2023 às 02:04
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `database`
+-- Banco de dados: `dbcaduser`
 --
 
 -- --------------------------------------------------------
@@ -28,9 +28,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `usuario` (
-  `Nome` varchar(100) NOT NULL,
-  `Email` varchar(255) NOT NULL,
-  `senha` varchar(255) NOT NULL
+  `nome` int(100) NOT NULL,
+  `email` int(255) NOT NULL,
+  `senha` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 COMMIT;
 
